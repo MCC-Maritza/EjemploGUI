@@ -1,5 +1,6 @@
 
 package GUI;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
@@ -7,6 +8,9 @@ import javax.swing.JFrame;
  * @author maryse
  */
 public class Ventanita extends JFrame{
+    
+    
+    JButton boton;
     
     
     public Ventanita(){
@@ -21,6 +25,16 @@ public class Ventanita extends JFrame{
         
         
     }
+    
+    public void componentes(){
+        
+        boton= new JButton("Botón");
+        
+        
+        add(boton);
+    }
+    
+    
     
     public static void main(String args[]){
         Ventanita ven= new Ventanita();
